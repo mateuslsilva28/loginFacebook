@@ -1,0 +1,441 @@
+@font-face {
+    font-family: 'Klavica';
+    src: url('../fonts/klavika-bold.otf');
+}
+@font-face {
+    font-family: 'Freight Bold';
+    src:url("../fonts/Freight\ Sans\ Bold.otf");
+}
+@font-face {
+    font-family: 'Freight Medium';
+    src: url('../fonts/Freight\ Sans\ Medium.otf');
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    width: 70%;
+    height: 65px;
+    background-color: #2b4170;
+    background: -moz-linear-gradient(top, #4f6596, #2b4170);
+    background: -ms-linear-gradient(top, #4f6596, #2b4170);
+    background: -webkit-linear-gradient(top, #4f6596, #2b4170);
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 20px;
+    color:white;
+}
+
+.logo{
+    font-family: 'Klavica';
+    font-size: 40px;
+}
+
+[name=login]{
+    font-size:12px;
+}
+
+[name=login] input{
+    margin-right: 5px;
+}
+
+.login{
+    position: relative;
+    top:-10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+label{display: block;}
+
+.esqueceu{
+    position:relative;
+    top:5px;
+    left: 178px;
+    color: rgba(255,255,255,0.5);
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.esqueceu:hover{
+    text-decoration: underline;
+}
+
+.entrar{
+    max-width:50px;
+    position: relative;
+    left:178px;
+    top:-21px;
+    color: #fff;
+    background-color: #5873ad;
+    outline: hidden;
+    border: 0.5px solid #2b4170;
+    border-radius:3px 2px;
+    cursor:pointer;
+}
+
+.entrar:hover{
+    background-color: #4e679e;
+    border: 0.5px solid #263963;
+}
+
+.content {
+    width: 70%;
+    height: 100%;
+    background-color: #e9ebee;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: rgba(0,0,0,0.8);
+}
+
+.titleContent{
+    font-size:36px;
+    font-family: 'Freight Bold';
+}
+
+.subtitleContent {
+    font-family: 'Freight Medium';
+    position:relative;
+    top: -25px;
+    font-size:20px;
+}
+
+.loginsRecentes .perfis{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.perfilPrincipal{
+    background-image: url('../imagens/eu.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.perfilPrincipal, .adicionarConta{
+    width:48%;
+    height: 100%;
+    cursor: pointer;
+    border: 0.5px solid rgba(255,255,255,0.5);
+    position: relative;
+    background-color: rgba(255,255,255,0.5);
+    transition: all 0.2s linear
+}
+
+.perfilPrincipal:hover, .adicionarConta:hover{
+    -webkit-box-shadow: 1px 1px 12px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    1px 1px 12px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         1px 1px 12px 0px rgba(50, 50, 50, 0.75);
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+    top:0px;
+}
+
+.perfilPrincipal .rodape {left:-1px}
+.contentAdicionarConta .rodape{left:0px}
+
+.rodape{
+    width:102%;
+    position:relative;
+    top:1px;
+    background-color: white;
+    text-align:center;
+}
+
+.remover{
+    width:17px;
+    height:17px;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: rgb(151, 150, 150);
+    text-align: center;
+    color: #fff;
+    font-size: 14px!important;
+    position:relative;
+    left:5px;
+    top:0px!important;
+}
+
+.remover:hover{
+    width:22px;
+    height:22px;
+    font-size: 19px!important;
+    color: rgb(151, 150, 150);
+    background-color: #fff;
+    left: 0px;
+}
+
+.notificacoes {
+    background-color: #f00;
+    border-radius: 100%;
+    color:#fff;
+    width:22px;
+    text-align:center;
+    height:22px;
+    font-size: 15px!important;
+    top:-10px!important;
+    right:-5px;
+}
+
+.adicionarConta{
+    display: flex;
+    align-items: flex-end;
+}
+
+.adicionarConta img{
+    width:25%;
+}
+
+.contentAdicionarConta{
+    width:100%;
+    height:70%;
+    content:' ';
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:space-between
+}
+
+.contentAdicionarConta p{
+    color: #324c83;
+}
+
+.cadastro{
+    width:40%;
+    padding-bottom: 25px;
+}
+
+.cadastro input[type=text], .cadastro input[type=password] {
+    height:35px;
+    width:45%;
+    margin:10px 0px;
+    padding-left:5px;
+    border-radius:4px;
+    border: 1px solid #ccc;
+    color: rgba(255,255,255,0.5);
+    font-size:92.5%
+}
+
+#celularEmail, #novaSenha{
+    width:93%;
+}
+[name=dtNascimento], [name=genero]{
+    color: rgba(104, 103, 103, 0.8);
+    font-weight: bold;
+}
+
+.row{
+    display: flex;
+    justify-content:row;
+}
+
+select{
+    max-width: 195px;
+    margin:0 5px;
+}
+
+.maisInformacoes{
+    height:15px;
+    text-align:center;
+    width:15px;
+    border-radius: 100%;
+    color:#fff;
+    font-size:12px!important;
+    background-color: rgba(104, 103, 103, 1);
+    margin: 0 5px;
+}
+
+.maisInformacoesGenero{
+    margin: 10px 0;
+}
+
+[name=genero]{
+    margin: 10px 0;
+}
+
+.cadastro .checkbox{
+    display: inline;
+    margin-right:10px;
+}
+
+
+.opcoesPronome{
+    display: none;
+}
+
+.pronome{
+    height:30px;
+    width:93%;
+    max-width: none;
+}
+
+.avisoPronome {
+    margin:5px 0 0 0;
+    font-size:12px;
+    color: rgba(104, 103, 103, 0.8);
+}
+
+#txtGenero {
+    width:93%;
+}
+
+.termos {
+    font-size:12px;
+    color: rgba(104, 103, 103, 0.8);
+    width:93%;
+}
+
+.termos a{
+    text-decoration: none;
+}
+
+.btnCadastrar{
+    border:0.5px solid #2c5115;
+    color: #fff;
+    text-align:center;
+    width:200px;
+    font-size:100%;
+    font-weight:bolder;
+    text-shadow: 1.2px 1.2px #000;
+    height:40px;
+    border-radius:5px;
+    background: -moz-linear-gradient(top, #6eab59, #588944);
+    background: -ms-linear-gradient(top, #6eab59, #588944);
+    background: -webkit-linear-gradient(top, #6eab59, #588944);
+    cursor:pointer;
+}
+
+.btnCadastrar:hover{
+    background: -moz-linear-gradient(top, #82c26c, #588944);
+    background: -ms-linear-gradient(top, #82c26c, #588944);
+    background: -webkit-linear-gradient(top, #82c26c, #588944);
+}
+
+@media (max-width:1000px){
+
+    .navbar{
+        height:auto;
+        width:100%;
+        flex-direction: column;
+        justify-content: center;
+        padding-left:0;
+        padding-right: 0;
+    }
+
+    .logo{
+        margin-bottom: 10px;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        
+        padding-left:0;
+        padding-right: 0%;
+    }
+    .cadastro {
+        width:80%;
+    }
+    .titleContent, .subtitleContent{
+        text-align: center;
+    }
+    .botaoCentro{
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:500px){
+
+    .navbar input {
+        width:90%;
+        max-width:none;
+    }
+
+    .login{
+        position: relative;
+        top:-10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .entrar{
+        top:initial;
+        position:relative;
+        margin-top: 30px;
+        left:-80px;
+    }
+
+    .esqueceu{
+        position: relative;
+        left:120px;
+        top:initial;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:365px){
+    .login{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .entrar{
+        left:0px;
+    }
+    .esqueceu{
+        left:0px;
+        top:20px;
+    }
+    [for=emailTelefone]{
+        position:relative;
+        top:10px;
+    }
+    [for=senha]{
+        position:relative;
+        top:40px
+    }
+    [name=senha]{
+        position:relative;
+        top:20px
+    }
+}
+
+@media (max-width:400px){
+    .perfis{
+        flex-direction: column;
+        height:450px!important;
+        align-items:center;
+    }
+    .perfilPrincipal, .adicionarConta{
+        margin-bottom: 15px;
+    }
+    .perfilPrincipal{
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+}

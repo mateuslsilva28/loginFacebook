@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <main>
+        <header class="navbar">
+            <span class="logo">facebook</span>
+                <form name="login">
+                    <div class="login">
+                        <label for="emailTelefone">Email ou telefone</label>
+                        <label for="senha">Senha</label>
+                        <input type="text" id="email" name="emailTelefone">
+                        <input type="password" id="senha" name="senha">
+                        <a href="#" class="esqueceu">Esqueceu a Conta?</a>
+                        <input type="button" class="entrar" value="Entrar">
+                    </div>
+                </form>
+            </div>
+        </header>
+        <article class="content">
+            <section class="loginsRecentes">
+                <h2 class="titleContent">Logins recentes</h2>
+                <p class="subtitleContent">Clique na sua foto ou adicione uma conta.</p>
+                <section class="perfis">
+                    <div class="perfilPrincipal">
+                        <div class="topo">
+                            <span class="remover">x</span>
+                            <span class="notificacoes">
+                                4
+                            </span>
+                        </div>
+                        <div class="rodape">
+                            <p class="nomeRodape">Mateus</p>
+                        </div>
+                    </div>
+                    <div class="adicionarConta">
+                        <div class="contentAdicionarConta"> 
+                            <img src="imagens/mais.png">                       
+                            <div class="rodape">
+                                <p class="nomeRodape">Adicionar conta</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="cadastro">
+                <h2 class="titleContent">Criar uma nova conta</h2>
+                <p class="subtitleContent">É rápido e fácil.</p>
+                <form name="frmCadastro">
+                    <input type="text" name="nome" id="nome" placeholder="Nome">
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                    <input type="text" name="celularEmail" id="celularEmail" placeholder="Celular ou email">
+                    <input type="password" name="novaSenha" id="novaSenha" placeholder="Nova senha">
+                    <label name="dtNascimento">Data de nascimento</label>
+                    <div class="row">
+                        <select class="dia"></select>
+                        <select class="mes"></select>
+                        <select class="ano"></select>
+                        <div class="maisInformacoes">?</div>
+                    </div>
+                    <label name="genero">Gênero</label>
+                    <input type="radio" id="feminino" name="genero"> <label class="checkbox" for="feminino">Feminino</label>
+                    <input type="radio" id="masculino" name="genero"> <label class="checkbox" for="masculino">Masculino</label>
+                    <input type="radio" id="personalizado" name="genero"> <label class="checkbox" for="personalizado">Personalizado</label>  
+                    <div class="maisInformacoes maisInformacoesGenero">?</div>
+                    <section class="opcoesPronome">
+                        <select class="pronome">
+                            <option value="0">Selecione seu pronome</option>
+                            <option value="1">Feminino: "Deseje a ela um feliz aniversário"</option>
+                            <option value="2">Masculino: "Deseje a ele um feliz aniversário"</option>
+                            <option value="3">Neutro: "Deseje a ele(a) um feliz aniversário"</option>
+                        </select>
+                        <p class="avisoPronome">O seu pronome fica visível para todos</p>
+                        <input type="text" id="txtGenero" placeholder="Gênero (opcional)">
+                    </section>
+                    <p class="termos">Ao clicar em Cadastre-se, você concorda com nossos <a href="#">Termos, Política de Dados e Política de Cookies</a>. Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
+                    <div class="botaoCentro">
+                        <button class="btnCadastrar">Cadastre-se</button>
+                    </div>
+                </form>
+            </section>
+        </article>
+    </main>
+    <script src="js/jquery-3.5.0.js"></script>
+    <script src="js/form.js">
+    </script>
+</body>
+</html>
